@@ -4,9 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
 <body>
-<h1>Hello World！</h1>
-<p>これはtomoya branchです</p>
+<h1 style="margin-top: 30px;">Hello World！</h1>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">コマンド</th>
+      <th scope="col">意味</th>
+      <th scope="col">備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>git branch ブランチ名</td>
+      <td>新しいブランチを作成する</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>git branch</td>
+      <td>作成したブランチを表示</td>
+      <td>git branch -a でリモートbranchも表示</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>git checkout ブランチ名</td>
+      <td>ブランチの変更</td>
+      <td>git checkout -b ブランチ名 で作成と変更を同時に行える</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>git merge ブランチ名</td>
+      <td>ブランチをoriginにマージする</td>
+      <td>ワークツリーはoriginブランチで行う</td>
+      </tr>
+      <tr>
+      <th scope="row">5</th>
+      <td>git pull</td>
+      <td>fetch, mergeを同時に行う</td>
+      <td>必ず master branch に pull されてしまうので注意が必要</td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
